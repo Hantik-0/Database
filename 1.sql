@@ -1,3 +1,4 @@
+Все бегуны, которые зарегистрированы на текущий марафон отображаются в таблице, как: имя, фамилия - BibNumber (CountryCode).
 select distinct 
   "FirstName", 
   "LastName", 
