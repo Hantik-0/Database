@@ -10,9 +10,9 @@ SELECT
 FROM 
     "Runner" run
 join 
-	"Gender" gen ON run."GenderId" = gen."GenderId"
+    "Gender" gen ON run."GenderId" = gen."GenderId"
 join
-	"Registration" reg on run."RunnerId" = reg."RunnerId"
+    "Registration" reg on run."RunnerId" = reg."RunnerId"
 JOIN 
     "RegistrationEvent" rer ON reg."RegistrationId" = rer."RegistrationId"
 JOIN 
@@ -21,4 +21,3 @@ WHERE
     e."StartDateTime" < NOW()
 ORDER BY 
     run."RunnerId", e."StartDateTime";
-
