@@ -47,5 +47,4 @@ join
 join 
 	"RegistrationStatus" rgs on reg."RegistrationStatusId" = rgs."RegistrationStatusId"  
 where 
-	ev."EventTypeId" = 'FM' and rgs."RegistrationStatusId" = 1
-) as "a"
+	ev."EventTypeId" = 'FM' and rgs."RegistrationStatusId" = 1 ) as "a"
